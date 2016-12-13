@@ -1,0 +1,40 @@
+{
+    "id"          : "sdk.user.set-search-term",
+    "name"        : "set-search-term",
+    "css"         : [ "appStylesheet.css" ],
+    "template"    : "appLayout.html",
+    "view"        : "appView.js",
+    "controller"  : "appController.js",
+    "permissions" : [ ],
+    "categoryId"  : "8",
+    "date"        : "2016-12-12",
+    "version"     : "1.0.0",
+    "screens": [
+        {
+            "id": "search-screen",
+            "chambers": [
+                {
+                    "id": "search-chamber",
+                    "js": "screens/searchChamber.js",
+                    "search": {
+                        "display": true,
+                        "placeholder": "I really want search to work"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "result-screen",
+            "chambers": [
+                {
+                    "id": "result-chamber",
+                    "js": "screens/resultChamber.js",
+                    "search": {
+                        "display": true,
+                        "placeholder": "I really want to see some results"
+                    }
+                }
+            ]
+        }
+    ]
+}
